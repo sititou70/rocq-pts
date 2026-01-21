@@ -1,0 +1,106 @@
+[suppose 0:∀p:℘U.[∀x:U.[(σx p) ⇒ (p x)]⇒(p Ω)].
+[[〈0 Δ〉 let x:U.suppose 2:(σx Δ).suppose 3:∀p:℘U.[(σx p)⇒(p τσx)].
+[[〈3 Δ〉 2] let p:℘U.〈3 λy:U.(p τσy)〉]] let p:℘U.〈0 λy:U.(p τσy)〉]
+let p:℘U.suppose 1:∀x:U.[(σx p)⇒(p x)].[〈1 Ω〉let x:U.〈1 τσx〉]]
+
+[
+  suppose
+    0:
+      ∀
+        p:
+          ℘U
+        .
+          [
+            ∀
+              x:
+                U
+              .
+                [
+                  (σx p)
+                   ⇒
+                  (p x)
+                ]
+            ⇒
+            (p Ω)
+          ]
+    .
+      [
+        [
+          〈0 Δ〉
+          let
+            x:
+              U
+            .
+              suppose
+                2:
+                  (σx Δ)
+                .
+                  suppose
+                    3:
+                      ∀
+                        p:
+                          ℘U
+                        .
+                          [
+                            (σx p)
+                            ⇒
+                            (p τσx)
+                          ]
+                    .
+                      [
+                        [
+                          〈3 Δ〉
+                          2
+                        ]
+                        let
+                          p:
+                            ℘U
+                          .
+                            〈
+                              3
+                              λ
+                                y:
+                                  U
+                                .
+                                  (p τσy)
+                            〉
+                      ]
+        ]
+        let
+          p:
+            ℘U
+          .
+            〈
+              0
+              λ
+                y:
+                  U
+                .
+                  (p τσy)
+            〉
+      ]
+  let
+    p:
+      ℘U
+    .
+      suppose
+        1:
+          ∀
+            x:
+              U
+            .
+              [
+                (σx p)
+                ⇒
+                (p x)
+              ]
+        .
+          [
+            〈1 Ω〉
+            let
+              x:
+                U
+              .
+                〈1 τσx〉
+          ]
+]
